@@ -1,15 +1,35 @@
 import React from 'react';
 
-function Header() {
+function Header(props) {
+
+    console.log(props);
+    const {
+        navOptions = [],
+        currOption,
+        setCurrOption
+    } = props;
+
     return (
         <header>
-            <nav class="navbar navbar-expand-sm">
-                <div class="container-fluid d-flex justify-content-start">
-                    <ul class="nav navbar-nav menu">
-                        <li class="nav-item ml-4"><a href="index.html">Home</a></li>
-                        <li class="nav-item ml-4"><a href="/">About</a></li>
-                        <li class="nav-item ml-4"><a href="/">Work</a></li>
-                        <li class="nav-item ml-4"><a href="/">Contact</a></li>
+            <nav className="navbar navbar-expand-sm">
+                <div className="container-fluid d-flex justify-content-start">
+                    <ul className="nav navbar-nav menu">
+                        <li className="nav-item ml-4"><a href="index.html">Home</a></li>
+                        {navOptions.map((option) => (
+                        <li
+                        className={`nav-item ml-4 ${
+                            currOption.name === option.name && `navActive`
+                        }`}
+                        key={option.name}
+                        >
+                        <span onClick={() => {
+                        setCurrOption(option);
+                        }}
+                        >
+                        {option.name}
+                        </span>
+                        </li>
+                        ))}
                     </ul>
                 </div>
             </nav>
