@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header/index';
 import LandingPage from './components/LandingPage/index';
+import Footer from './components/Footer/index';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <main>
           <LandingPage />
         </main>
+        <Footer />
       </div>
   )
 }
