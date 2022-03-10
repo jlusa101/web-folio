@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+/*  */
+
+body {
+  background-image: url("./assets/images/background2.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.hero {
+  margin-top: 280px;
+}
+
+.intro {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+h1,
+h2,
+h4,
+span {
+  color: #e3963e;
+}
