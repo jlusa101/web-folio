@@ -7,18 +7,18 @@ function App() {
 
   const [navOptions] = useState([
     { name: 'About'},
-    { name: 'Work'},
+    { name: 'Portfolio'},
     { name: 'Contact'}
   ]);
 
-  const [currOption, setCurrOption] = useState(navOptions[0]);
+  const [currOption, setCurrOption] = useState(false);
 
   return (
       <div>
         <Header
           navOptions = {navOptions}
           currOption = {currOption}
-          setNavSelected = {setCurrOption}
+          setCurrOption = {setCurrOption}
         />
         <main>
           <LandingPage />

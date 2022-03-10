@@ -68,12 +68,12 @@ header {
   color: white;
 }
 
-/* h1,
+h1,
 h2,
 h4,
-span {
+#my-name {
   color: #e3963e;
-} */
+}
 
 .navActive {
   color: orange;

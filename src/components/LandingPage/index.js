@@ -4,7 +4,7 @@ function LandingPage() {
     return (
         <section className="hero" id="header">
             <div className="d-flex justify-content-center">
-                <p className="intro w-50">Hey there, my name is <span>Joona Lusa</span> and I am a full - stack web developer</p>
+                <p className="intro w-50">Hey there, my name is <span id ='my-name'>Joona Lusa</span> and I am a full - stack web developer</p>
             </div>
             <div className="d-flex justify-content-center">
                 <a href="/" download><button type="button" className="btn btn-outline-secondary btn-outline-light">Resume  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
