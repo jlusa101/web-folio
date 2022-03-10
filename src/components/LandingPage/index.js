@@ -1,6 +1,7 @@
 import React from 'react';
 
 function LandingPage() {
+    
     return (
         <section className="hero" id="header">
             <div className="d-flex justify-content-center">
@@ -15,5 +16,7 @@ function LandingPage() {
         </section>
     )
 }
+
+
 
 export default LandingPage;

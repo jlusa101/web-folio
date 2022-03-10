@@ -76,5 +76,11 @@ h4,
 }
 
 .navActive {
-  color: orange;
+  color: #e3963e;
+}
+
+header nav a,
+a:hover {
+  text-decoration: none;
+  color: white;
 }
