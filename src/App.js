@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
-import Header from './components/Header';
-import LandingPage from './components/LandingPage';
+import Header from './components/Header/index';
+import LandingPage from './components/LandingPage/index';
 
 function App() {
 
