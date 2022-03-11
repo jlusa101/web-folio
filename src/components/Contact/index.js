@@ -3,9 +3,7 @@ import { validateEmail } from '../../utils/helpers';
 
 function Contact() {
     
-    const [formState, setFormState] = useState({ name: '', email: '', subject: '', message: '' });
     const [errorMessage, setErrorMessage] = useState('');
-    const { name, email, subject, message } = formState;
 
     function handleChange(e) {
 
@@ -14,10 +12,6 @@ function Contact() {
         } else {
             setErrorMessage('');
         } 
-
-        if (!errorMessage) {
-            setFormState({ ...formState, [e.target.name]: e.target.value });
-          }
     };
 
     // Handles form submissions and sends myself an email from the user through a service called Form Spree 
@@ -25,7 +19,6 @@ function Contact() {
 
         e.preventDefault();
         var form = document.getElementById("my-form");
-        var status = document.getElementById("form-status");
         var data = new FormData(e.target);
 
         if(e.target.name.value.length === 0){
