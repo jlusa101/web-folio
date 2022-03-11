@@ -12,8 +12,8 @@ function About() {
                         adipisicing elit. Sed, adipisci commodi repellendus aut vel quasi nisi aspernatur sunt ratione dicta. Nobis cumque saepe iusto. Veniam laboriosam itaque saepe repellendus ea.Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Sed, adipisci commodi repellendus aut vel quasi nisi aspernatur sunt ratione dicta. Nobis cumque saepe iusto. Veniam laboriosam itaque saepe repellendus ea.</p>
                 </div>
-                <div className="flex-fill flex-column w-50">
-                  
+                <div className="flex-fill flex-column w-50 justify-content-end">
+                    
                 </div>
             </div>
 

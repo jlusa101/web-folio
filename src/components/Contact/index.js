@@ -2,35 +2,53 @@ import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
 
 function Contact() {
-
+    
+    const [formState, setFormState] = useState({ name: '', email: '', subject: '', message: '' });
     const [errorMessage, setErrorMessage] = useState('');
+    const { name, email, subject, message } = formState;
 
     function handleChange(e) {
-        if (e.target.name === 'email') {
-            const isValid = validateEmail(e.target.value);
-            console.log(isValid);
-            // isValid conditional statement
-            if (!isValid) {
-                setErrorMessage('Your email is invalid.');
-            } else {
-                setErrorMessage('');
-            }
-          } else {
-            if (!e.target.value.length) {
-                setErrorMessage(`${e.target.name} is required.`);
-            } else {
-                setErrorMessage('');
-            } 
-        }
+
+        if (!e.target.value.length) {
+            setErrorMessage(`${e.target.name} is required.`);
+        } else {
+            setErrorMessage('');
+        } 
+
+        if (!errorMessage) {
+            setFormState({ ...formState, [e.target.name]: e.target.value });
+          }
     };
 
     // Handles form submissions and sends myself an email from the user through a service called Form Spree 
     function handleSubmit(e) {
 
-        var form = document.getElementById("my-form");
         e.preventDefault();
+        var form = document.getElementById("my-form");
         var status = document.getElementById("form-status");
         var data = new FormData(e.target);
+
+        if(e.target.name.value.length === 0){
+            return;
+        }
+        else if(e.target.email.value.length === 0){
+            return;
+        }
+        else if(e.target.subject.value.length === 0){
+            return;
+        }
+        else if(e.target.message.value.length === 0){
+            return;
+        }
+
+        const isValid = validateEmail(e.target.email.value);
+        if (!isValid) {
+            setErrorMessage('Please enter a valid email address.');
+            return;
+        } else {
+            setErrorMessage('');
+        }
+
         fetch("https://formspree.io/f/xqknqkaw", {
             method: "POST",
             body: data,
@@ -39,11 +57,19 @@ function Contact() {
             }
         }).then(response => {
             if (response.ok) {
-                status.innerHTML = "Thanks for your message!";
+                setErrorMessage("Thanks for your message!");
                 form.reset();
-            }})
-            .catch(err => {
-            status.innerHTML = "Oops! There was a problem sending your email";
+            } else {
+                response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                        setErrorMessage(data["errors"].map(err => err["message"]).join(", "));
+                    } else {
+                        setErrorMessage("Oops! There was a problem sending your email");
+                    }
+                })
+            }
+        }).catch(err => {
+            setErrorMessage("Oops! There was a problem sending your email");
         });
 
     };
@@ -73,24 +99,24 @@ function Contact() {
                 <div className="flex-fill flex-column">
                     <h2>Let's get in touch. Send me a message:</h2>
                     <form id="my-form" className="d-flex flex-column" onSubmit={handleSubmit}>
-                        <label for="contact-name">Name</label>
+                        <label htmlFor="contact-name">Name</label>
                         <input type="text" name="name" id="contact-name" placeholder="John Smith" onBlur={handleChange} />
 
-                        <label for="contact-email">Email</label>
-                        <input type="email" name="email" id="contact-email" placeholder="john.smith@email.com" onBlur={handleChange} />
+                        <label htmlFor="contact-email">Email</label>
+                        <input type="text" name="email" id="contact-email" placeholder="john.smith@email.com" onBlur={handleChange} />
 
-                        <label for="contact-subject">Subject</label>
+                        <label htmlFor="contact-subject">Subject</label>
                         <input type="text" id="contact-subject" name="subject" placeholder="Subject" onBlur={handleChange} />
 
-                        <label for="contact-message">Message</label>
+                        <label htmlFor="contact-message">Message</label>
                         <textarea id="contact-message" name="message" placeholder="Message" onBlur={handleChange}></textarea>
+
+                        <button id="send-btn" type="submit" className="btn btn-primary btn-sm mb-3 mt-3">Send</button>
                         {errorMessage && (
                         <div>
                             <p className="error-text">{errorMessage}</p>
                         </div>
                         )}
-                        <button id="send-btn" type="submit" className="btn btn-primary btn-sm mb-3 mt-3">Send</button>
-                        <p id="form-status"></p>
                     </form>
                 </div>
             </div>
