@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
-import Header from './components/Header/index';
-import LandingPage from './components/LandingPage/index';
-import Footer from './components/Footer/index';
+import Header from './components/Header';
+import LandingPage from './components/LandingPage';
+import Footer from './components/Footer';
 import Contact from './components/Contact';
+import About from './components/About'
 
 function App() {
 
@@ -23,9 +24,10 @@ function App() {
           setCurrOption = {setCurrOption}
         />
         <main>
-        {/* {currOption === navOptions[0] ? <About /> : <LandingPage /> }
-        {currOption === navOptions[1] ? <Portfolio /> : <LandingPage /> } */}
-        {currOption === navOptions[2] ? <Contact /> : <LandingPage /> }
+        {/* {currOption === navOptions[0] ? <About /> : <LandingPage /> } */}
+        {/* {currOption === navOptions[1] ? <Portfolio /> : <LandingPage /> } */}
+        {/* {currOption === navOptions[2] ? <Contact /> : <LandingPage /> } */}
+          {currOption === navOptions[0] ? <About /> : currOption === navOptions[1] ? <LandingPage /> : currOption === navOptions[2] ? <Contact /> : <LandingPage /> }
         </main>
         <Footer />
       </div>
