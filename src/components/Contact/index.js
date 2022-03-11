@@ -1,6 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { validateEmail } from '../../utils/helpers';
 
 function Contact() {
+
+    const [errorMessage, setErrorMessage] = useState('');
+
+    function handleChange(e) {
+        if (e.target.name === 'email') {
+            const isValid = validateEmail(e.target.value);
+            console.log(isValid);
+            // isValid conditional statement
+            if (!isValid) {
+                setErrorMessage('Your email is invalid.');
+            } else {
+                setErrorMessage('');
+            }
+          } else {
+            if (!e.target.value.length) {
+                setErrorMessage(`${e.target.name} is required.`);
+            } else {
+                setErrorMessage('');
+            } 
+        }
+    };
 
     // Handles form submissions and sends myself an email from the user through a service called Form Spree 
     function handleSubmit(e) {
@@ -52,17 +74,21 @@ function Contact() {
                     <h2>Let's get in touch. Send me a message:</h2>
                     <form id="my-form" className="d-flex flex-column" onSubmit={handleSubmit}>
                         <label for="contact-name">Name</label>
-                        <input type="text" name="name" id="contact-name" placeholder="John Smith" />
+                        <input type="text" name="name" id="contact-name" placeholder="John Smith" onBlur={handleChange} />
 
                         <label for="contact-email">Email</label>
-                        <input type="email" name="email" id="contact-email" placeholder="john.smith@email.com" />
+                        <input type="email" name="email" id="contact-email" placeholder="john.smith@email.com" onBlur={handleChange} />
 
                         <label for="contact-subject">Subject</label>
-                        <input type="text" id="contact-subject" name="subject" placeholder="Subject" />
+                        <input type="text" id="contact-subject" name="subject" placeholder="Subject" onBlur={handleChange} />
 
                         <label for="contact-message">Message</label>
-                        <textarea id="contact-message" name="message" placeholder="Message"></textarea>
-
+                        <textarea id="contact-message" name="message" placeholder="Message" onBlur={handleChange}></textarea>
+                        {errorMessage && (
+                        <div>
+                            <p className="error-text">{errorMessage}</p>
+                        </div>
+                        )}
                         <button id="send-btn" type="submit" className="btn btn-primary btn-sm mb-3 mt-3">Send</button>
                         <p id="form-status"></p>
                     </form>
