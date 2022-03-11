@@ -108,6 +108,12 @@ footer {
   margin-top: 5px;
 }
 
+.bio {
+  background-color: #3f556d;
+  padding: 15px;
+  border-radius: 25px;
+}
+
 @media screen and (max-width: 980px) {
 }
 
