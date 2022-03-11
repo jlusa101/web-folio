@@ -1,5 +1,5 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
 .App-logo {
@@ -45,6 +45,11 @@ body {
   color: white;
 }
 
+.title {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
 .menu {
   text-decoration: none;
   font-size: 18px;
@@ -59,6 +64,7 @@ header {
 
 .hero {
   margin-top: 280px;
+  margin-bottom: 100px;
 }
 
 .intro {
@@ -92,6 +98,14 @@ footer {
   width: 100%;
   height: 45px;
   font-size: 22px;
+}
+
+#contact {
+  font-size: 18px;
+}
+
+#contact label {
+  margin-top: 5px;
 }
 
 @media screen and (max-width: 980px) {

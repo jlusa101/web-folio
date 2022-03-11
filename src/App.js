@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header/index';
 import LandingPage from './components/LandingPage/index';
 import Footer from './components/Footer/index';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -22,7 +23,9 @@ function App() {
           setCurrOption = {setCurrOption}
         />
         <main>
-          <LandingPage />
+        {/* {currOption === navOptions[0] ? <About /> : <LandingPage /> }
+        {currOption === navOptions[1] ? <Portfolio /> : <LandingPage /> } */}
+        {currOption === navOptions[2] ? <Contact /> : <LandingPage /> }
         </main>
         <Footer />
       </div>
