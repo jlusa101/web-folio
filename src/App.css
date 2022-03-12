@@ -2,13 +2,17 @@
   box-sizing: border-box;
 }
 
-/*  */
+:root {
+  --primary-color: #e3963e;
+  --secondary-color: #fffff0;
+  --background-color: #3f556d;
+}
 
 body {
   background-image: url("./assets/images/background2.jpg");
   background-attachment: fixed;
   background-size: cover;
-  color: white;
+  color: var(--secondary-color);
 }
 
 .title {
@@ -19,7 +23,7 @@ body {
 .menu {
   text-decoration: none;
   font-size: 18px;
-  color: white;
+  color: var(--secondary-color);
 }
 
 header {
@@ -40,30 +44,30 @@ header {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   text-align: center;
-  color: white;
+  color: var(--secondary-color);
 }
 
 h1,
 h2,
 h4,
 #my-name {
-  color: #e3963e;
+  color: var(--primary-color);
 }
 
 .navActive {
-  color: #e3963e;
+  color: var(--primary-color);
 }
 
 header nav a,
 a:hover {
   text-decoration: none;
-  color: white;
+  color: var(--secondary-color);
 }
 
 footer {
   position: fixed;
   bottom: 0;
-  background-color: #3f556d;
+  background-color: var(--background-color);
   width: 100%;
   height: 45px;
   font-size: 22px;
@@ -78,17 +82,22 @@ footer {
 }
 
 .bio {
-  background-color: #3f556d;
+  background-color: var(--background-color);
   padding: 15px;
   border-radius: 25px;
 }
 
-#about {
+#about,
+#resume {
   margin-bottom: 100px;
 }
 
 #about img {
   border-radius: 45%;
+}
+
+#resume li {
+  font-size: 18px;
 }
 
 @media screen and (max-width: 980px) {
