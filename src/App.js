@@ -11,7 +11,8 @@ function App() {
   const [navOptions] = useState([
     { name: 'About'},
     { name: 'Portfolio'},
-    { name: 'Contact'}
+    { name: 'Contact'},
+    { name: 'Resume'}
   ]);
 
   const [currOption, setCurrOption] = useState(false);

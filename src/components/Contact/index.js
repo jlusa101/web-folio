@@ -7,6 +7,18 @@ function Contact() {
 
     function handleChange(e) {
 
+         if(e.target.name === 'email'){
+             
+             // Validating user's email address
+            const isValid = validateEmail(e.target.value);
+            if (!isValid) {
+                setErrorMessage('Please enter a valid email address.');
+                return;
+            } else {
+                setErrorMessage('');
+            }
+         }
+
         if (!e.target.value.length) {
             setErrorMessage(`${e.target.name} is required.`);
         } else {
@@ -21,27 +33,13 @@ function Contact() {
         var form = document.getElementById("my-form");
         var data = new FormData(e.target);
 
-        if(e.target.name.value.length === 0){
-            return;
-        }
-        else if(e.target.email.value.length === 0){
-            return;
-        }
-        else if(e.target.subject.value.length === 0){
-            return;
-        }
-        else if(e.target.message.value.length === 0){
+        // Ensuring that the user has filled in the required fields
+        if(e.target.name.value.length || e.target.email.value.length || e.target.subject.value.length || e.target.message.value.length === 0){
+            setErrorMessage('Please fill in all required fields.');
             return;
         }
 
-        const isValid = validateEmail(e.target.email.value);
-        if (!isValid) {
-            setErrorMessage('Please enter a valid email address.');
-            return;
-        } else {
-            setErrorMessage('');
-        }
-
+        // Fetch request to the third party service provider that allows users to send the website owner messages
         fetch("https://formspree.io/f/xqknqkaw", {
             method: "POST",
             body: data,
