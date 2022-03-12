@@ -27,9 +27,6 @@ function App() {
           setCurrOption = {setCurrOption}
         />
         <main>
-        {/* {currOption === navOptions[0] ? <About /> : <LandingPage /> } */}
-        {/* {currOption === navOptions[1] ? <Portfolio /> : <LandingPage /> } */}
-        {/* {currOption === navOptions[2] ? <Contact /> : <LandingPage /> } */}
           {currOption === navOptions[0] ? <About /> : currOption === navOptions[1] ? <Portfolio /> : currOption === navOptions[2] ? <Contact /> : currOption === navOptions[3] ? <Resume /> : <LandingPage /> }
         </main>
         <Footer />
