@@ -15,14 +15,10 @@ body {
   color: var(--secondary-color);
 }
 
-.title {
-  margin-top: 80px;
-  margin-bottom: 40px;
-}
-
+/* Header / Landing Page */
 .menu {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 22px;
   color: var(--secondary-color);
 }
 
@@ -47,13 +43,6 @@ header {
   color: var(--secondary-color);
 }
 
-h1,
-h2,
-h4,
-#my-name {
-  color: var(--primary-color);
-}
-
 .navActive {
   color: var(--primary-color);
 }
@@ -63,7 +52,46 @@ a:hover {
   text-decoration: none;
   color: var(--secondary-color);
 }
+/* About */
+.bio {
+  background-color: var(--background-color);
+  padding: 15px;
+  border-radius: 25px;
+}
 
+#about img {
+  border-radius: 45%;
+}
+
+/* Portfolio */
+.card-text {
+  color: black;
+}
+
+.card-banner {
+  padding: 10px;
+  background-color: #c5b358;
+}
+
+.card {
+  border-radius: 20px;
+}
+
+/* Contact */
+#contact {
+  font-size: 18px;
+}
+
+#contact label {
+  margin-top: 5px;
+}
+
+/* Resume */
+#resume li {
+  font-size: 18px;
+}
+
+/* Footer */
 footer {
   position: fixed;
   bottom: 0;
@@ -73,44 +101,26 @@ footer {
   font-size: 22px;
   padding-top: 55px;
 }
+/* Miscellaneous */
 
-#contact {
-  font-size: 18px;
-}
-
-#contact label {
-  margin-top: 5px;
-}
-
-.bio {
-  background-color: var(--background-color);
-  padding: 15px;
-  border-radius: 25px;
-}
-
-.card-text {
-  color: black;
+h1,
+h2,
+h4,
+#my-name {
+  color: var(--primary-color);
 }
 
 #about,
-#resume {
-  margin-bottom: 50px;
-}
-
-#about img {
-  border-radius: 45%;
-}
-
-#resume li {
-  font-size: 18px;
+#resume,
+#portfolio {
+  margin-bottom: 75px;
 }
 
 .fa {
   font-size: 30px;
 }
 
-@media screen and (max-width: 980px) {
-}
+/* Media Queries */
 
 @media screen and (max-width: 930px) {
   #info {

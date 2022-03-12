@@ -3,8 +3,8 @@ const resume = require('../../assets/docs/jlusa_resume.pdf')
 
 function Resume() {
     return (
-        <section className="title about mx-5">
-            <div className='d-flex' id="resume">
+        <section className="title about mx-5 mt-5" id="resume">
+            <div className='d-flex'>
                 <div className='flex-fill w-25'>
                     <h4>Languages</h4>
                     <ul>
@@ -32,7 +32,7 @@ function Resume() {
                     </ul>
                 </div>
             </div>
-            <div className='d-flex' id="resume">
+            <div className='d-flex'>
                 <div className='flex-fill w-25'>
                     <h4>Back-End Frameworks</h4>
                     <ul>

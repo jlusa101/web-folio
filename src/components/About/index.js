@@ -5,7 +5,7 @@ const profPic = require('../../assets/images/avatar.png');
 function About() {
 
     return (
-        <section id="about" className="title about mx-5">
+        <section id="about" className="about mx-5 mt-5">
             <div className="d-flex" id='contact'>
                 <div className="flex-fill flex-column w-50 bio">
                 

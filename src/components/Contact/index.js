@@ -66,7 +66,7 @@ function Contact() {
     };
   
     return (
-        <section id="contact" className="title mx-5">
+        <section id="contact" className="title mx-5 mt-5">
             <div id="info" className="d-flex">
                 <div className="flex-fill flex-column">
                     <h2>Contact Me</h2>
