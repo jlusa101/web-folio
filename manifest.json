@@ -1,0 +1,11 @@
+{
+  "short_name": "JLusa Portfolio",
+  "name": "Joona Lusa's Portfolio",
+  "icons": [
+  
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
