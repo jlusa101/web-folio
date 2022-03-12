@@ -6,7 +6,7 @@ function About() {
 
     return (
         <section id="about" className="title about mx-5">
-            <div className="d-flex">
+            <div className="d-flex" id='contact'>
                 <div className="flex-fill flex-column w-50 bio">
                 
                 <div className="d-flex">
@@ -34,8 +34,6 @@ function About() {
                         </ul>
                     </div>
                 </div>
-                </div>
-                <div className="flex-fill flex-column">
                 </div>
             </div>
         </section>
