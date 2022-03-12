@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Contact from './components/Contact';
 import About from './components/About';
 import Resume from './components/Resume';
-import Portfolio from './components/Portfolio/index.js';
+import Portfolio from './components/Portfolio';
 
 function App() {
 
