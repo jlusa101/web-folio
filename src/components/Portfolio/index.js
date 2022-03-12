@@ -11,9 +11,9 @@ function Portfolio() {
         <section>
             <div className="card-deck mt-3 w-100 ml-0">
                 <div className="card">
-                    <div className="card-body">
-                    <h4 className="card-title"><a href="https://mikekhoury135.github.io/Project-1-Group-3/">What If Stock/Crypto</a></h4>
-                    <p className="card-text">HTML/CSS/JavaScript <a href="https://github.com/mikekhoury135/Project-1-Group-3" target="_blank "><i className="fa fa-github "></i></a></p>
+                    <div className="card-body pro1">
+                        <h4 className="card-title"><a href="https://mikekhoury135.github.io/Project-1-Group-3/">What If Stock/Crypto</a></h4>
+                        <p className="card-text">HTML/CSS/JavaScript <a href="https://github.com/mikekhoury135/Project-1-Group-3" target="_blank "><i className="fa fa-github "></i></a></p>
                     </div>
                 </div>
                 <div className="card">
@@ -38,8 +38,8 @@ function Portfolio() {
                 </div>
                 <div className="card">
                     <div className="card-body">
-                    <h4 className="card-title">README Generator</h4>
-                    <p className="card-text">Node.js</p>
+                    <h4 className="card-title"><a href="https://jlusa101.github.io/timed-quiz/">Timed Quiz</a></h4>
+                    <p className="card-text">HTML/CSS/JavaScript <a href="https://github.com/jlusa101/timed-quiz" target="_blank "><i className="fa fa-github "></i></a></p>
                     </div>
                 </div>
                 <div className="card">
