@@ -137,7 +137,8 @@ h4,
 }
 
 @media screen and (max-width: 575px) {
-  .menu a {
+  .menu a,
+  li {
     font-size: 15px;
   }
   .intro {
@@ -153,12 +154,8 @@ h4,
     flex-direction: column;
   }
 
-  #resume {
+  #skills {
     flex-direction: column;
     align-items: start;
-  }
-
-  #dl-btn {
-    margin-top: -185px;
   }
 }
