@@ -139,6 +139,12 @@ h4,
     flex-direction: column;
   }
 
+  .about div {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
   #projects {
     flex-direction: column;
   }

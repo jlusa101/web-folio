@@ -9,7 +9,7 @@ function About() {
     return (
         <section id="about" className="about mx-5 mt-5">
             <div className="d-flex" id='contact'>
-                <div className="flex-fill flex-column bio">
+                <div className="flex-fill bio">
                     <div className="d-flex">
                         <div className="m-3 w-75">
                             <img src={profPic} className="img-thumbnail mt-4" alt="Joona Lusa" />
@@ -27,7 +27,7 @@ function About() {
                             I decided to go back to school and start coding again. Since then, I’ve been continuously learning about new and evolving technologies that surround 
                             us everyday on the web. 
                             </p>
-                            <div className='d-flex justify-content-around'>
+                            <div className='d-flex'>
                                 <div className='w-50'>
                                     <h4>Hobbies</h4>
                                     <ul>
