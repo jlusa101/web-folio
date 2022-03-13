@@ -1,4 +1,6 @@
 import React from 'react';
+
+// Importing images
 const whatIf = require('../../assets/images/what-if-stock.jpg')
 const bikeHaven = require('../../assets/images/bike_haven.jpg')
 const generatePassword = require('../../assets/images/genePass.jpg');

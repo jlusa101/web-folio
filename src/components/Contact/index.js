@@ -5,8 +5,9 @@ function Contact() {
     
     const [errorMessage, setErrorMessage] = useState('');
 
+    // Function that handles any changes inside the text areas in the contact form
+    // If user leaves the text area blank, they will be notified
     function handleChange(e) {
-
          if(e.target.name === 'email'){
              
              // Validating user's email address
@@ -34,7 +35,7 @@ function Contact() {
         var data = new FormData(e.target);
 
         // Ensuring that the user has filled in the required fields
-        if(e.target.name.value.length || e.target.email.value.length || e.target.subject.value.length || e.target.message.value.length === 0){
+        if(!e.target.name.value.length || !e.target.email.value.length || !e.target.subject.value.length || !e.target.message.value.length){
             setErrorMessage('Please fill in all required fields.');
             return;
         }
