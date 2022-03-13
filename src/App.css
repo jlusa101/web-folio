@@ -94,6 +94,10 @@ a:hover {
   margin-top: 5px;
 }
 
+#my-form {
+  margin-bottom: 60px;
+}
+
 /* Resume */
 #resume li {
   font-size: 18px;
