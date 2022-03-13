@@ -30,7 +30,7 @@ function About() {
                             <div className='d-flex'>
                                 <div className='w-50'>
                                     <h4>Hobbies</h4>
-                                    <ul>
+                                    <ul className='hobby-list'>
                                         <li>I enjoy taking walks with my dog Bobo</li>
                                         <li>Playing basketball</li>
                                         <li>Watching horror movies/tv-shows</li>
