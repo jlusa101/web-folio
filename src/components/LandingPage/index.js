@@ -4,7 +4,7 @@ const resume = require('../../assets/docs/jlusa_resume.pdf')
 function LandingPage() {
     
     return (
-        <section className="hero" id="header">
+        <section className="hero">
             <div className="d-flex justify-content-center">
                 <p className="intro w-50">Hey there, my name is <span id ='my-name'>Joona Lusa</span> and I am a full - stack web developer</p>
             </div>

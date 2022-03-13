@@ -32,8 +32,7 @@ header {
 }
 
 .hero {
-  margin-top: 280px;
-  margin-bottom: 100px;
+  margin-top: 150px;
 }
 
 .intro {
@@ -64,13 +63,22 @@ a:hover {
 }
 
 /* Portfolio */
-.card-text {
+/* .card-text {
   color: black;
-}
+} */
 
 .card-banner {
   padding: 10px;
   background-color: #c5b358;
+  text-decoration: none;
+}
+
+.card-banner a {
+  color: var(--secondary-color);
+}
+
+.card-banner a:hover {
+  color: var(--background-color);
 }
 
 .card {
@@ -141,9 +149,11 @@ h4,
   li {
     font-size: 15px;
   }
+
   .intro {
     font-size: 25px;
   }
+
   .navbar-nav {
     flex-direction: row;
   }
