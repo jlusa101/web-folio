@@ -36,7 +36,7 @@ function About() {
                                         <li>Watching horror movies/tv-shows</li>
                                     </ul>
                                 </div>
-                                <div className='w-50'>
+                                <div className='w-75 mr-4'>
                                     <img src={secPicture} className="img-thumbnail mt-4" alt="Joona Lusa with dog, Bobo" />
                                 </div>
                                 
