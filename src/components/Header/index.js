@@ -14,7 +14,7 @@ function Header(props) {
             <nav className="navbar navbar-expand-sm">
                 <div className="container-fluid d-flex justify-content-start">
                     <ul className="nav navbar-nav menu">
-                        <li className="mx-2"><a href="./index.html">Home</a></li>
+                        <li className="mx-2 home-link"><a href="./index.html">Home</a></li>
                         {navOptions.map((option) => (
                         <li className={`mx-2 nav-item ${currOption.name === option.name && `navActive`}`}key={option.name}>
                             <a href="#!"><span onClick={() => setCurrOption(option)}>{option.name}</span></a>

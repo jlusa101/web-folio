@@ -16,10 +16,18 @@ body {
 }
 
 /* Header / Landing Page */
-.menu {
+header a {
   text-decoration: none;
   font-size: 22px;
   color: var(--secondary-color);
+}
+
+.menu .navActive a {
+  color: var(--primary-color);
+}
+
+.menu a:hover {
+  text-decoration: none;
 }
 
 header {
@@ -43,15 +51,6 @@ header {
   color: var(--secondary-color);
 }
 
-.navActive {
-  color: var(--primary-color);
-}
-
-header nav a,
-a:hover {
-  text-decoration: none;
-  color: var(--secondary-color);
-}
 /* About */
 .bio {
   background-color: var(--background-color);
@@ -75,6 +74,7 @@ a:hover {
 
 .card-banner a:hover {
   color: var(--background-color);
+  text-decoration: none;
 }
 
 .card {
@@ -108,6 +108,10 @@ footer {
   height: 45px;
   font-size: 22px;
   padding-top: 55px;
+}
+
+footer a:hover {
+  color: var(--secondary-color);
 }
 /* Miscellaneous */
 
