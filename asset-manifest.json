@@ -1,18 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.04ddb0d6.css",
-    "main.js": "/static/js/main.d43e72f2.js",
-    "static/js/787.ee15c39b.chunk.js": "/static/js/787.ee15c39b.chunk.js",
-    "static/media/background2.jpg": "/static/media/background2.47b5cf04b5e6f99e189f.jpg",
-    "static/media/jlusa_resume.pdf": "/static/media/jlusa_resume.ae29bfadbe39b6e726bc.pdf",
-    "static/media/avatar.png": "/static/media/avatar.79bfd233db79aec439d7.png",
-    "index.html": "/index.html",
-    "main.04ddb0d6.css.map": "/static/css/main.04ddb0d6.css.map",
-    "main.d43e72f2.js.map": "/static/js/main.d43e72f2.js.map",
-    "787.ee15c39b.chunk.js.map": "/static/js/787.ee15c39b.chunk.js.map"
+    "main.css": "/web-folio/static/css/main.80b71536.css",
+    "main.js": "/web-folio/static/js/main.b965938b.js",
+    "static/js/787.6ad79e47.chunk.js": "/web-folio/static/js/787.6ad79e47.chunk.js",
+    "static/media/background2.jpg": "/web-folio/static/media/background2.47b5cf04b5e6f99e189f.jpg",
+    "static/media/run-buddy.jpg": "/web-folio/static/media/run-buddy.77a01d7ab0620226e47c.jpg",
+    "static/media/bike_haven.jpg": "/web-folio/static/media/bike_haven.414e46099339ed7e8563.jpg",
+    "static/media/weatherDash.jpg": "/web-folio/static/media/weatherDash.d9751b96171852d69516.jpg",
+    "static/media/jlusabobo.jpg": "/web-folio/static/media/jlusabobo.95bc04f43fd7fa0c88ae.jpg",
+    "static/media/jlusa.jpg": "/web-folio/static/media/jlusa.2bd7073cb19d2cd4ae96.jpg",
+    "static/media/timedQuiz.jpg": "/web-folio/static/media/timedQuiz.4e380a405d1123cae738.jpg",
+    "static/media/genePass.jpg": "/web-folio/static/media/genePass.89519b0215c2c5bef045.jpg",
+    "static/media/what-if-stock.jpg": "/web-folio/static/media/what-if-stock.ec4f4e05287b7b846591.jpg",
+    "static/media/jlusa_resume.pdf": "/web-folio/static/media/jlusa_resume.8167f012d0c9489f5edb.pdf",
+    "index.html": "/web-folio/index.html",
+    "main.80b71536.css.map": "/web-folio/static/css/main.80b71536.css.map",
+    "main.b965938b.js.map": "/web-folio/static/js/main.b965938b.js.map",
+    "787.6ad79e47.chunk.js.map": "/web-folio/static/js/787.6ad79e47.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.04ddb0d6.css",
-    "static/js/main.d43e72f2.js"
+    "static/css/main.80b71536.css",
+    "static/js/main.b965938b.js"
   ]
 }
