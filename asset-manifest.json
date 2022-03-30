@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/web-folio/static/css/main.80b71536.css",
-    "main.js": "/web-folio/static/js/main.b965938b.js",
+    "main.js": "/web-folio/static/js/main.8dab1607.js",
     "static/js/787.6ad79e47.chunk.js": "/web-folio/static/js/787.6ad79e47.chunk.js",
     "static/media/background2.jpg": "/web-folio/static/media/background2.47b5cf04b5e6f99e189f.jpg",
-    "static/media/run-buddy.jpg": "/web-folio/static/media/run-buddy.77a01d7ab0620226e47c.jpg",
+    "static/media/mission-possible.jpg": "/web-folio/static/media/mission-possible.45736d259676326e12e6.jpg",
     "static/media/bike_haven.jpg": "/web-folio/static/media/bike_haven.414e46099339ed7e8563.jpg",
     "static/media/weatherDash.jpg": "/web-folio/static/media/weatherDash.d9751b96171852d69516.jpg",
     "static/media/jlusabobo.jpg": "/web-folio/static/media/jlusabobo.95bc04f43fd7fa0c88ae.jpg",
@@ -15,11 +15,11 @@
     "static/media/jlusa_resume.pdf": "/web-folio/static/media/jlusa_resume.8167f012d0c9489f5edb.pdf",
     "index.html": "/web-folio/index.html",
     "main.80b71536.css.map": "/web-folio/static/css/main.80b71536.css.map",
-    "main.b965938b.js.map": "/web-folio/static/js/main.b965938b.js.map",
+    "main.8dab1607.js.map": "/web-folio/static/js/main.8dab1607.js.map",
     "787.6ad79e47.chunk.js.map": "/web-folio/static/js/787.6ad79e47.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.80b71536.css",
-    "static/js/main.b965938b.js"
+    "static/js/main.8dab1607.js"
   ]
 }
