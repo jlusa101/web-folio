@@ -4,7 +4,7 @@ import React from 'react';
 const whatIf = require('../../assets/images/what-if-stock.jpg')
 const bikeHaven = require('../../assets/images/bike_haven.jpg')
 const generatePassword = require('../../assets/images/genePass.jpg');
-const runBuddy = require('../../assets/images/run-buddy.jpg');
+const missionPossible = require('../../assets/images/mission-possible.jpg');
 const timedQuiz = require('../../assets/images/timedQuiz.jpg');
 const weatherDashboard = require('../../assets/images/weatherDash.jpg');
 
@@ -33,10 +33,10 @@ function Portfolio() {
                 <div className="card">
                     <div className="card-body">
                         <div className='card-banner'>
-                            <h4 className="card-title"><a href="https://jlusa101.github.io/password-generator/" target="_blank ">Random Password Generator</a></h4>
-                            <p className="card-text">HTML/CSS/JavaScript <a href="https://github.com/jlusa101/password-generator" target="_blank "><i className="fa fa-github "></i></a></p>
+                            <h4 className="card-title"><a href="https://glacial-cliffs-90348.herokuapp.com/" target="_blank ">Mission Possible</a></h4>
+                            <p className="card-text">MERN <a href="https://github.com/Fabscg/group-3-project" target="_blank "><i className="fa fa-github "></i></a></p>
                         </div>
-                        <img src={generatePassword} className='card-img' alt='generate a secure password application' />
+                        <img src={missionPossible} className='card-img' alt='Mission Possible charity web site' />
                     </div>
                 </div>
             </div>
@@ -44,10 +44,10 @@ function Portfolio() {
                 <div className="card">
                     <div className="card-body">
                         <div className='card-banner'>
-                            <h4 className="card-title"><a href="https://jlusa101.github.io/run-buddy/" target="_blank ">Run Buddy</a></h4>
-                            <p className="card-text">HTML/CSS <a href="https://github.com/jlusa101/run-buddy" target="_blank "><i className="fa fa-github "></i></a></p>
+                            <h4 className="card-title"><a href="https://jlusa101.github.io/password-generator/" target="_blank ">Random Password Generator</a></h4>
+                            <p className="card-text">HTML/CSS <a href="https://github.com/jlusa101/password-generator" target="_blank "><i className="fa fa-github "></i></a></p>
                         </div>
-                        <img src={runBuddy} className='card-img' alt='run buddy web application' />
+                        <img src={generatePassword} className='card-img' alt='generate a secure password application' />
                     </div>
                 </div>
                 <div className="card">
