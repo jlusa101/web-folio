@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.4dd72450.css",
-    "main.js": "/static/js/main.bf04e627.js",
-    "static/js/787.6ad79e47.chunk.js": "/static/js/787.6ad79e47.chunk.js",
-    "static/media/background2.jpg": "/static/media/background2.47b5cf04b5e6f99e189f.jpg",
-    "static/media/mission-possible.jpg": "/static/media/mission-possible.45736d259676326e12e6.jpg",
-    "static/media/bike_haven.jpg": "/static/media/bike_haven.414e46099339ed7e8563.jpg",
-    "static/media/weatherDash.jpg": "/static/media/weatherDash.d9751b96171852d69516.jpg",
-    "static/media/jlusabobo.jpg": "/static/media/jlusabobo.95bc04f43fd7fa0c88ae.jpg",
-    "static/media/jlusa.jpg": "/static/media/jlusa.2bd7073cb19d2cd4ae96.jpg",
-    "static/media/timedQuiz.jpg": "/static/media/timedQuiz.4e380a405d1123cae738.jpg",
-    "static/media/genePass.jpg": "/static/media/genePass.89519b0215c2c5bef045.jpg",
-    "static/media/what-if-stock.jpg": "/static/media/what-if-stock.ec4f4e05287b7b846591.jpg",
-    "static/media/jlusa_resume.pdf": "/static/media/jlusa_resume.cf18966fe40a7aee7cb4.pdf",
-    "index.html": "/index.html",
-    "main.4dd72450.css.map": "/static/css/main.4dd72450.css.map",
-    "main.bf04e627.js.map": "/static/js/main.bf04e627.js.map",
-    "787.6ad79e47.chunk.js.map": "/static/js/787.6ad79e47.chunk.js.map"
+    "main.css": "/web-folio/static/css/main.80b71536.css",
+    "main.js": "/web-folio/static/js/main.c936e87d.js",
+    "static/js/787.6ad79e47.chunk.js": "/web-folio/static/js/787.6ad79e47.chunk.js",
+    "static/media/background2.jpg": "/web-folio/static/media/background2.47b5cf04b5e6f99e189f.jpg",
+    "static/media/mission-possible.jpg": "/web-folio/static/media/mission-possible.45736d259676326e12e6.jpg",
+    "static/media/bike_haven.jpg": "/web-folio/static/media/bike_haven.414e46099339ed7e8563.jpg",
+    "static/media/weatherDash.jpg": "/web-folio/static/media/weatherDash.d9751b96171852d69516.jpg",
+    "static/media/jlusabobo.jpg": "/web-folio/static/media/jlusabobo.95bc04f43fd7fa0c88ae.jpg",
+    "static/media/jlusa.jpg": "/web-folio/static/media/jlusa.2bd7073cb19d2cd4ae96.jpg",
+    "static/media/timedQuiz.jpg": "/web-folio/static/media/timedQuiz.4e380a405d1123cae738.jpg",
+    "static/media/genePass.jpg": "/web-folio/static/media/genePass.89519b0215c2c5bef045.jpg",
+    "static/media/what-if-stock.jpg": "/web-folio/static/media/what-if-stock.ec4f4e05287b7b846591.jpg",
+    "static/media/jlusa_resume.pdf": "/web-folio/static/media/jlusa_resume.cf18966fe40a7aee7cb4.pdf",
+    "index.html": "/web-folio/index.html",
+    "main.80b71536.css.map": "/web-folio/static/css/main.80b71536.css.map",
+    "main.c936e87d.js.map": "/web-folio/static/js/main.c936e87d.js.map",
+    "787.6ad79e47.chunk.js.map": "/web-folio/static/js/787.6ad79e47.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4dd72450.css",
-    "static/js/main.bf04e627.js"
+    "static/css/main.80b71536.css",
+    "static/js/main.c936e87d.js"
   ]
 }
